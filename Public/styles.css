@@ -1,0 +1,115 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #9edbf7;
+  color: #333333;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 8px 5px rgba(0, 0, 0, 0.24);
+  padding: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #03a9f4;
+  color: white;
+  cursor: pointer;
+}
+
+.searchbar {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #c7eefe;
+  padding: 10px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+}
+.searchbar input {
+  flex-grow: 1;
+  height: 40px;
+  padding: 5px;
+  border: solid 1px #9cc4d5;
+  border-radius: 4px 0 0 4px;
+}
+.searchbar input:focus,
+.searchbar input:focus-visible {
+  border: solid 1px #03a9f4;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+}
+.searchbar button {
+  height: 40px;
+  padding: 5px 10px;
+  border: solid 1px #03a9f4;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.taskBox {
+  display: flex;
+  flex-direction: row;
+  background: #9edbf7;
+  padding: 10px 5px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+.taskBox .addedTask,
+.taskBox .completedTask {
+  width: 50%;
+  padding: 5px 5px;
+}
+
+.taskBox .addedTask .inner-task,
+.taskBox .completedTask .inner-task {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.taskBox .inner-task h2 {
+  font-size: 18px;
+}
+.taskBox .inner-task ul {
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.taskBox .inner-task li {
+  list-style: none;
+  font-size: 12px;
+  padding: 5px 0px 5px 25px;
+  position: relative;
+}
+
+.taskBox .inner-task li input {
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+.taskBox .inner-task button {
+  height: 40px;
+  padding: 5px 10px;
+  border: solid 1px #03a9f4;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
